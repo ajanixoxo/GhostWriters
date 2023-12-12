@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Montserrat&family=Open+Sans&family=Pacifico&family=Whisper&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.navbar-brand {
+    font-family: "Pacifico";
+}
+
+.nav-link {
+    background-color: rgb(203, 195, 195);
+    color: black;
+    font-family: "Kalam";
+    margin-right: 5px;
+}
+
+.hero {
+    background: linear-gradient(#eedbdb, #bcb9b9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.hero-left {
+    text-align: center;
+    padding: 20px;
+    width: 50%;
+}
+
+.hero-left h1 {
+    font-family: "Pacifico";
+    font-weight: 500;
+    font-size: 2.5em;
+    color: #333;
+    /* Adjust the color as needed */
+    margin-bottom: 10px;
+}
+
+.hero-left p {
+    font-family: "Kalam";
+    font-size: 20px;
+    font-weight: 300;
+    color: #666;
+}
+
+/* Define keyframes for the zoom animation */
+@keyframes zoomInOut {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Apply styles to the ghost and book images */
+.hero-right {
+    position: relative;
+    text-align: center;
+    width: 50%;
+}
+
+.ghost-img,
+.book-img {
+    display: inline-block;
+}
+
+/* Apply the zoom animation to the ghost images */
+.ghost-img img {
+    animation: zoomInOut 4s infinite alternate;
+}
+
+/* Center the book image */
+.book-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.book-header {
+    margin: 20px;
+    text-align: center;
+    font-family: "Pacifico";
+}
+
+/* Apply styles to the books section */
+/* Apply styles to the books section */
+.books {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+  }
+  
+  /* Style the book header */
+  .book-header h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the book container */
+  .book-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* Style the book details */
+  .book-details {
+    max-width: 600px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  /* Style the book image */
+  .books-img img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+/* Apply styles to the about section */
+/* Apply styles to the about section */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    margin-top:30px;
+    background: linear-gradient(#eedbdb, #bcb9b9);
+  }
+  .about h1{
+    font-family: "Pacifico";
+  }
+  /* Apply styles to the image container */
+  .about-img {
+    margin-bottom: 20px;
+  }
+  
+  /* Style the image */
+  .about-img img {
+    
+    width: 100%; /* Make sure the image fills its container */
+    border-radius: 50%; /* Make the image rounded */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Soft shadow effect */
+  }
+  
+  /* Apply styles to the about details */
+  .about-details {
+    font-family: "Kalam";
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Soft shadow effect */
+  }
+  
+  /* Style the heading in the about section */
+  .about h1 {
+    font-size: 2em;
+    color: #333; /* Dark gray color */
+    margin-bottom: 10px;
+  }
+  
+  /* Style the text in the about details */
+.about-details p {
+    font-family: "Kalam";
+    font-size: 1em;
+    color: #333; /* Dark gray color */
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  
+/* Apply styles to the contact section */
+.contact {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  /* Style the heading in the contact section */
+  .contact h2 { 
+    font-family: "Pacifico";
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the paragraph in the contact section */
+  .contact p {
+    font-family: "Kalam";
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the WhatsApp link */
+  .whatsapp-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25d366; /* WhatsApp green color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    font-family: "Kalam";
+  }
+  
+  .whatsapp-link img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  .whatsapp-link:hover {
+    background-color: #128C7E; /* Darker shade for hover effect */
+  }
+  
+  /* Apply styles to the footer */
+footer {
+    background: linear-gradient(#eedbdb, #bcb9b9);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style the content within the footer */
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: "Kalam";
+  }
+  
+  /* Style the links in the footer */
+  footer a {
+ 
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #25d366; /* WhatsApp green color */
+  }
+  
+@media only screen and (max-width: 768px) {
+    .hero {
+        background: linear-gradient(#eedbdb, #bcb9b9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .hero-right {
+        position: relative;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .hero-left {
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+    }
+    /* Apply styles to the books section */
+.books {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+  }
+  
+  /* Style the book header */
+  .book-header h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the book container */
+  .book-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* Style the book details */
+  .book-details {
+    max-width: 600px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  /* Style the book image */
+  .books-img img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-details p {
+    font-family: "Kalam";
+    font-size: 1em;
+    color: #333; /* Dark gray color */
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+    /* Your mobile-specific styles go here */
+}
